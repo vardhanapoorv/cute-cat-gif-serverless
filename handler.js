@@ -7,7 +7,7 @@ module.exports.getCuteGIF = async (event, context, callback) => {
       method: 'get',
       url: 'http://api.giphy.com/v1/gifs/random',
       params: {
-        api_key: 'frSQ6MzJrd8pszX75bVR9y1B2DcZ4pX8',
+        api_key: process.env.API_KEY,
         tag: 'cute cat'
       }  
     });
