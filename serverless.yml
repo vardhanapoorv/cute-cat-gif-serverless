@@ -21,7 +21,7 @@ provider:
   name: aws
   runtime: nodejs8.10
   environment:
-    API_KEY: 'frSQ6MzJrd8pszX75bVR9y1B2DcZ4pX8'
+    API_KEY: ${ssm:GIPHY_API_KEY}
 
 # you can overwrite defaults here
 #  stage: dev
